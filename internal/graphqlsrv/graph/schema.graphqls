@@ -1,0 +1,19 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+type Node {
+	name: String!
+	description: String
+	forksCount: Int!
+}
+
+type Projects {
+	nodes: [Node]!
+}
+
+type Query {
+	projects(last: Int = 5): Projects!
+}
+
+# go run -mod=mod github.com/99designs/gqlgen generate

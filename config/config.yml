@@ -1,0 +1,14 @@
+gitlab:  
+  graphql_url : "https://gitlab.com/api/graphql"  
+  projects_query: "query last_projects($n: Int = 5) {
+	  projects(last:$n) {
+	    nodes {
+	      name
+	      description
+	      forksCount
+	    }
+	  }
+	}"
+  token: "aaa"
+  
+  
