@@ -11,7 +11,8 @@ $ ./cmd/graphql --cmdid=GRAPHQL_SERVER
 	
 Open browser http://localhost:8080/ and execute query with data to see the result.
 
-```query last_projects($n: Int = 5) {
+```sh
+query last_projects($n: Int = 5) {
   projects(last:$n) {
     nodes {
       name
@@ -19,7 +20,8 @@ Open browser http://localhost:8080/ and execute query with data to see the resul
       forksCount
     }
   }
-}```
+}
+```
 
 ## Get project info from gitlab:
 
